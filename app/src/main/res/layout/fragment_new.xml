@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_employ_default"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_find" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="birthday"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton android:id="@+id/rdo_nam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nam"/>
+
+            <RadioButton android:id="@+id/rdo_nu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nu"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_find"
+            android:hint="email"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_find"
+            android:hint="phone"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:background="@drawable/bg_edit_find"
+            android:hint="salary"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_num_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup android:id="@+id/rg_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rdo_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ban Giám Đốc"/>
+            <RadioButton android:id="@+id/rdo_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phòng Kế Toán"/>
+            <RadioButton android:id="@+id/rdo_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phòng Kinh Doanh"/>
+            <RadioButton android:id="@+id/rdo_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phòng Thiết Kế"/>
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_find"
+            android:minLines="3"
+            android:hint="profile"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="New"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
